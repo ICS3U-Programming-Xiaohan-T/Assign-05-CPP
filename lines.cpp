@@ -49,7 +49,7 @@ void calculateLine() {
     }
 }
 
-// Main function
+// The main function
 int main() {
     std::string tryAgain;
 
