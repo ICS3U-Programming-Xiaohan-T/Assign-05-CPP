@@ -33,6 +33,13 @@ void calculateLine() {
             std::cout << "The x-coordinates cannot be the same. "
                       << "This would be a vertical line with undefined slope."
                       << std::endl;
+
+            // Check if the y values are the same
+            if (y1 == y2) {
+                // Display a message when both x and y are the same
+                std::cout << "Also, both y-values are the same — "
+                << "the two points are identical." << std::endl;
+            }
             return;
         }
 
@@ -43,7 +50,6 @@ void calculateLine() {
         // Display the result
         std::cout << "The equation of the line is: y = "
                   << m << "x + " << b << std::endl;
-
     } catch (const std::invalid_argument& e) {
         std::cout << "Invalid input. Please enter numeric values." << std::endl;
     }
